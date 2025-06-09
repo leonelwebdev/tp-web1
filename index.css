@@ -156,6 +156,71 @@ a:hover {
     color: #242424;
 }
 
+/* Animación */
+.fade-in-slow {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.fade-in-fast {
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos del formulario */
+.formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.formulario h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ff4d6d;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.formulario button {
+  padding: 10px;
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #e8435b;
+}
+
+#form-message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
 .footer-credit {
     font-size: 15px;
     color: #525252;
